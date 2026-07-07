@@ -1,0 +1,28 @@
+auth:
+    - email-password
+    - phone
+dbs:
+    db1:
+        server_only: true
+        models:
+            restaurant:
+                name: string
+                seats?: number
+                opened: boolean
+            hotel:
+                name: string
+                rooms: number
+                opened: boolean
+                rating: number
+    db2:
+        server_only: false
+        models:
+            photo:
+                name: string
+                position?: string
+                uri: string
+                date: date
+            video:
+                size: number
+                archived: boolean
+                date: date
